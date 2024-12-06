@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      
+    
+}
+
+hello{
+    color:yellowgreen;
+}
+nav{
+   height: 50px;
+   background:rgb(255, 255, 0) ; 
+
+}
+nav .container{
+    margin:0 auto;
+    max-width: 110px;
+    
+
+}
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+nav .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(46, 223, 40);
+    font-family: sans-serif;
+    font-weight: 700;
+}
+nav .menu ul {
+    display: flex;
+    
+}
+nav .menu ul li{
+    list-style: none;
+    margin:0 15px;
+    color: rgb(29, 19, 120);
+    font-weight: 500;
+    
+    transition: 600ms;
+}
+nav .menu ul li a:hover{
+    padding:10px;
+    background-color: rgba(255, 255, 255, 255);
+    color: #000;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+/*make it resposive by inspect..founded that <320px */
+@media(max-width:1000px){
+    nav .menu ul {
+        position: fixed;
+        top:50px;
+        left: 0px;
+        background: gold;
+        height: 100vh;
+        width: 20vh;
+        display: block;
+        text-align: center;
+        
+    }
+    nav .menu ul li {
+             margin:25px 0 ;
+             
+
+    }
+    nav .menu ul li a{
+        font-size: 15px;
+        text-decoration: none;
+    }
+    nav .menu ul li a:hover{
+        padding:10px;
+        background-color: rgba(255, 255, 255, 255);
+        
+        outline: none;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+}
